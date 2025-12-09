@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>My Shop</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>My Shop</h1>
+    <nav>
+      <a href="admin.html" class="btn">Admin Panel</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="controls">
+      <label>ক্যাটাগরি:
+        <select id="filterCategory">
+          <option value="">সব</option>
+        </select>
+      </label>
+    </section>
+
+    <section id="products" class="grid"></section>
+
+    <hr/>
+
+    <section id="order-section">
+      <h2>অর্ডার ফর্ম</h2>
+      <form id="orderForm">
+        <input required id="custName" placeholder="নাম" />
+        <input required id="custPhone" placeholder="ফোন নম্বর" />
+        <input required id="custAddress" placeholder="ঠিকানা" />
+        <select id="orderProduct" required></select>
+        <button type="submit" class="primary">অর্ডার করুন</button>
+      </form>
+      <div id="orderMessage"></div>
+    </section>
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
