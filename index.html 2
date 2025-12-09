@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Admin - My Shop</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>Admin Panel</h1>
+    <nav>
+      <a href="index.html" class="btn">Site</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="admin-grid">
+      <div class="card">
+        <h2>Categories</h2>
+        <input id="newCategory" placeholder="নতুন ক্যাটাগরি নাম" />
+        <button id="addCategory">Add Category</button>
+        <ul id="categoriesList"></ul>
+      </div>
+
+      <div class="card">
+        <h2>Products</h2>
+        <input id="productTitle" placeholder="Product Title" />
+        <select id="productCategory"></select>
+        <input id="productPrice" placeholder="Price" />
+        <input type="file" id="productImage" accept="image/*" />
+        <button id="addProduct">Add / Update Product</button>
+
+        <h3>All Products</h3>
+        <ul id="productsAdminList"></ul>
+      </div>
+
+      <div class="card">
+        <h2>Orders <span id="orderCount"></span></h2>
+        <ul id="ordersList"></ul>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
